@@ -16,7 +16,7 @@ Navigate to the folder containing this code inside the terminal. Run the followi
 
 1. `conda update -n base -c defaults conda`
 2. `make conda`
-3. `conda activate qia`
+3. `conda activate python-intro`
 4. `make pip`
 
 **Troubleshooting**:
