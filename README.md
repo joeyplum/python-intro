@@ -9,6 +9,11 @@ I have an NVIDIA GPU, working on Windows, WSL2, and Linux. This code should work
 If the following settings fail, conda create an environment yourself, and install the pip packages manually/through git.
 Also, make sure you have your git SSH keys set (you may have to do this for each terminal/git browser/VScode that you operate).
 
+## Clone the repository.
+
+1. Ensure SSH is setup for Git.
+2. Navigate to folder you want to clone repository to.
+3. `git clone git@github.com:joeyplum/python-intro.git`
 
 ## Installation.
 
@@ -18,19 +23,6 @@ Navigate to the folder containing this code inside the terminal. Run the followi
 2. `make conda`
 3. `conda activate python-intro`
 4. `make pip`
-
-**Troubleshooting**:
-
-1. This repository was tested on an NVIDIA GPU. If running on a system without
-   the same, please remove the following packages from `environment.yaml`:
-   - `cudnn`
-   - `nccl`
-   - `cupy`
-2. If not using an NVIDIA GPU, please set `devnum = -1` where called.
-3. When running `make pip`, `git clone git+https://github.com/mikgroup/sigpy.git@main`
-   will error if GitHub ssh keys are not set. Please replace that line in the
-   `Makefile` with `git clone https://github.com/mikgroup/sigpy.git@main` and
-   run `make pip` again.
 
 ## For activating display in WSL2:
 
