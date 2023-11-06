@@ -18,4 +18,4 @@ pip:
 clean:
 	rm -rf __pycache__
 	rm -rf .ipynb_checkpoints
-	conda env remove -n qia
+	conda env remove -n python-intro
